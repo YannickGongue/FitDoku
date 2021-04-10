@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context="com.example.thejoega.fitdoku.neues">
+
+    <Button
+        android:id="@+id/n_tp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="#0101DF"
+        android:text="Neuer Trainingsplan"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/n_ueb"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="81dp" />
+
+    <Button
+        android:id="@+id/n_ueb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="#0101DF"
+        android:text="Neue Übung"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/n_gr"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="118dp" />
+
+    <Button
+        android:id="@+id/n_gr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="#0101DF"
+        android:text="Neues Gerät"
+        android:textColor="#FFFFFF"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="118dp"
+        tools:layout_editor_absoluteY="297dp" />
+</LinearLayout>

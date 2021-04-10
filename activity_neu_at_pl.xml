@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.thejoega.fitdoku.Neu_at_pl">
+
+    <TextView
+        android:id="@+id/neuer_ueb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:text="Trainingsplan erstellen"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/AuNummerTp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="nummer:"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/editText"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/EditAuNummTp"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="number"
+            app:layout_constraintStart_toEndOf="@+id/pr_name"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="0dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/AuTpName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Name:"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/editText3"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/editAuTpName"
+            android:layout_width="148dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="text"
+            app:layout_constraintStart_toEndOf="@+id/pr_alter"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="0dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/AuGeraetName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Ubung:"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/editText3"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/editAuNeUbungTp"
+            android:layout_width="148dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="text"
+            app:layout_constraintStart_toEndOf="@+id/pr_alter"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="0dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/AuGeraetNeuTp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Geraet:"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/editText3"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/editAuGeraetneuTp"
+            android:layout_width="148dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="text"
+            app:layout_constraintStart_toEndOf="@+id/pr_alter"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="0dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/AuDatumTp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Datum:"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/editText3"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/editAuDatumTp"
+            android:layout_width="148dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="date"
+            app:layout_constraintStart_toEndOf="@+id/pr_alter"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="0dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="100dp">
+
+        <Button
+            android:id="@+id/AddBtnTp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/colorPrimary"
+            android:text="Speichern"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/AbbrbtnTp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/colorPrimary"
+            android:text="Schließen"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

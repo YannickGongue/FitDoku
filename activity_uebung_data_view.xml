@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.thejoega.fitdoku.UebungDataView">
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:layout_marginLeft="100dp"
+      >
+
+
+    <TextView
+        android:id="@+id/UebView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="Übung Anzeigen"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          >
+
+          <TextView
+              android:id="@+id/NummerUbV"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:text="nummer:  "
+              android:textSize="25sp"
+              android:textStyle="bold"
+              app:layout_constraintEnd_toStartOf="@+id/editText"
+              app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/NummerUbView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="nummer"
+            android:layout_marginBottom="15dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/editText"
+            app:layout_constraintStart_toStartOf="parent" />
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          >
+          <TextView
+              android:id="@+id/UbungNameV"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:text="Name: "
+              android:textSize="25sp"
+              android:textStyle="bold"
+              app:layout_constraintEnd_toStartOf="@+id/editText3"
+              app:layout_constraintStart_toStartOf="parent" />
+
+          <TextView
+              android:id="@+id/UbungNameView"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:layout_marginBottom="15dp"
+              android:hint="Name"
+              android:textSize="25sp"
+              android:textStyle="bold"
+              app:layout_constraintEnd_toStartOf="@+id/editText3"
+              app:layout_constraintStart_toStartOf="parent" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          >
+          <TextView
+              android:id="@+id/GeraetUbNameV"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:text="Geraet: "
+              android:textSize="25sp"
+              android:textStyle="bold"
+              app:layout_constraintEnd_toStartOf="@+id/editText3"
+              app:layout_constraintStart_toStartOf="parent" />
+
+          <TextView
+            android:id="@+id/GeraetUbNameView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="Geraet"
+            android:layout_marginBottom="20dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/editText3"
+            app:layout_constraintStart_toStartOf="parent" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          >
+          <TextView
+              android:id="@+id/AnsatzUbView"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:text="Ansatz: "
+              android:textSize="25sp"
+              android:textStyle="bold"
+              app:layout_constraintEnd_toStartOf="@+id/editText3"
+              app:layout_constraintStart_toStartOf="parent" />
+
+
+          <TextView
+              android:id="@+id/editAnsatzUbView"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:hint="Ansatz"
+              android:textSize="25sp"
+              android:textStyle="bold"
+              app:layout_constraintEnd_toStartOf="@+id/editText3"
+              app:layout_constraintStart_toStartOf="parent" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          >
+          <TextView
+              android:id="@+id/DatumUbView"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:text="Datum: "
+              android:textSize="25sp"
+              android:textStyle="bold"
+              app:layout_constraintEnd_toStartOf="@+id/editText3"
+              app:layout_constraintStart_toStartOf="parent" />
+
+          <TextView
+              android:id="@+id/editDatumUbView"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:hint="Datum"
+              android:textSize="25sp"
+              android:textStyle="bold"
+              app:layout_constraintEnd_toStartOf="@+id/editText3"
+              app:layout_constraintStart_toStartOf="parent" />
+      </LinearLayout>
+
+      <Button
+          android:id="@+id/UbungView"
+          android:layout_width="wrap_content"
+          android:layout_height="50dp"
+          android:layout_gravity="center"
+          android:layout_marginBottom="100dp"
+          android:layout_marginTop="50dp"
+          android:background="@color/colorPrimary"
+          android:text="ok"
+          android:textSize="25sp" />
+
+  </LinearLayout>
+
+</LinearLayout>

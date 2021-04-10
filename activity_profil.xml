@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.thejoega.fitdoku.profil">
+
+
+    <TextView
+        android:id="@+id/profil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:text="Profil"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp">
+    <TextView
+        android:id="@+id/pr_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Name     :"
+        android:textSize="25sp"
+        android:textStyle="bold"
+         />
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="245dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text=" "
+         />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp">
+        <TextView
+            android:id="@+id/pr_gewicht"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Gewicht  :"
+            android:textSize="25sp"
+            android:textStyle="bold"
+          />
+
+        <EditText
+            android:id="@+id/edit_gewicht"
+            android:layout_width="245dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:text=""
+             />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="KG"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp">
+        <TextView
+            android:id="@+id/pr_alter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Alter  :"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/edit_alter"
+            android:layout_width="245dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/pr_groeße"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Größe    :"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/edit_groesse"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/edit_groesse"
+            android:layout_width="245dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            />
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="m"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp">
+    <Button
+        android:id="@+id/pro_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="50dp"
+        android:background="#00FF00"
+        android:text="Speichern"
+        android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/pro_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="50dp"
+            android:background="#00FF00"
+            android:text="Schließen"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+
+</LinearLayout>
+
