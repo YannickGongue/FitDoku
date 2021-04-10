@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_pr"
+            android:icon="@drawable/ic_profil"
+            android:title="Profil" />
+
+        <item
+            android:id="@+id/nav_tp"
+            android:icon="@drawable/icon_tp"
+            android:title="Trainingspläne" />
+        <item
+            android:id="@+id/nav_ueb"
+            android:icon="@drawable/ic_ueb"
+            android:title="Übungen" />
+        <item
+            android:id="@+id/nav_ger"
+            android:icon="@drawable/ic_ger"
+            android:title="Geräte" />
+        <item
+            android:id="@+id/nav_st"
+            android:icon="@drawable/ic_sta"
+            android:title="Statistik" />
+        <item
+            android:id="@+id/nav_info"
+            android:icon="@drawable/ic_info"
+            android:title="Info" />
+    </group>
+
+<group>
+    <item
+        android:id="@+id/nav_share"
+        android:icon="@drawable/ic_menu_share"
+        android:title="Teilen" />
+    <item
+        android:id="@+id/nav_send"
+        android:icon="@drawable/ic_menu_send"
+        android:title="Senden" />
+</group>
+
+</menu>
